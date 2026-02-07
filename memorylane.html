@@ -1,126 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Memory Lane 💖</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Memory Lane 💕</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ff69b4, #ff1493);
+  color: white;
+  text-align: center;
+}
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #ffe6f2, #fff);
-    }
+h1 {
+  padding-top: 30px;
+}
 
-    h1 {
-      text-align: center;
-      padding: 20px;
-      color: #ff1493;
-      font-size: 2.5rem;
-    }
+.gallery img {
+  width: 90%;
+  max-width: 400px;
+  margin: 15px;
+  border-radius: 20px;
+}
 
-    .gallery {
-      display: flex;
-      gap: 20px;
-      padding: 30px;
-      overflow-x: auto;
-      scroll-snap-type: x mandatory;
-    }
-
-    .gallery::-webkit-scrollbar {
-      height: 8px;
-    }
-
-    .gallery::-webkit-scrollbar-thumb {
-      background: #ff1493;
-      border-radius: 10px;
-    }
-
-    .card {
-      min-width: 260px;
-      height: 360px;
-      background: white;
-      border-radius: 20px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-      scroll-snap-align: center;
-      transition: transform 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-    }
-
-    .card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-    }
-
-    .caption {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background: rgba(0,0,0,0.6);
-      color: white;
-      padding: 10px;
-      text-align: center;
-      font-size: 14px;
-    }
-
-    .next {
-      text-align: center;
-      margin: 40px 0;
-    }
-
-    .next a {
-      padding: 14px 30px;
-      background: #ff1493;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-size: 18px;
-      transition: background 0.3s;
-    }
-
-    .next a:hover {
-      background: #8a2be2;
-    }
-  </style>
+a {
+  display: inline-block;
+  margin: 30px;
+  padding: 12px 30px;
+  background: white;
+  color: #ff1493;
+  text-decoration: none;
+  border-radius: 30px;
+}
+</style>
 </head>
 
 <body>
-  <h1>Our Memory Lane 💕</h1>
+<h1>Our Memory Lane 💖</h1>
 
-  <div class="gallery">
-    <div class="card">
-      <img src="1.jpg" alt="Memory 1">
-    </div>
+<div class="gallery">
+  <img src="1.jpg">
+  <img src="2.jpg">
+  <img src="3.jpg">
+</div>
 
-    <div class="card">
-      <img src="2.jpg" alt="Memory 2">
-    </div>
-
-    <div class="card">
-      <img src="3.jpg" alt="Memory 3">
-    </div>
-
-    <div class="card">
-      <img src="4.jpg" alt="Memory 4">
-    </div>
-
-    <div class="card">
-      <img src="5.jpg" alt="Memory 5">
-    </div>
-  </div>
-
-  <div class="next">
-    <a href="letter.html">Next ❤️</a>
-  </div>
+<a href="cake.html">Next 🎂</a>
 </body>
 </html>
